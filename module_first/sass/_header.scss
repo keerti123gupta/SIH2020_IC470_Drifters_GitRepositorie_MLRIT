@@ -1,0 +1,191 @@
+/*---------------------
+  Header
+-----------------------*/
+.header {
+    background: $secondary-color;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    &.header--normal {
+        position: relative;
+    }
+}
+
+.header__logo {
+    padding: 33px 0 31px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        left: -400px;
+        top: 0;
+        width: 580px;
+        height: 100%;
+        background: $primary-color;
+        content: '';
+        z-index: -1;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 96% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0%, 96% 100%, 0% 100%);
+    }
+
+    a {
+        display: inline-block;
+    }
+}
+
+.header__menu {
+    padding: 28px 0px;
+
+    ul {
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 40px;
+            position: relative;
+
+            &.active {
+
+                a {
+                    
+                    
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &:hover {
+
+                a {
+                    
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                .dropdown {
+                    top: 33px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .dropdown {
+                position: absolute;
+                left: 0;
+                top: 56px;
+                width: 150px;
+                background: $primary-color;
+                text-align: left;
+                padding: 2px 0;
+                z-index: 9;
+                opacity: 0;
+                visibility: hidden;
+                @include transition(all, .3s);
+
+                li {
+                    display: block;
+                    margin-right: 0;
+
+                    a {
+                        font-size: 14px;
+                        color: $white-color;
+                        font-weight: 400;
+                        padding: 8px 20px;
+                        text-transform: capitalize;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            a {
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $white-color;
+                display: block;
+                padding: 6px 0;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: $primary-color;
+                    content: '';
+                    @include transition(all, .5s);
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+.header__right {
+    text-align: right;
+    padding: 20px 0;
+}
+
+.header__right__search {
+    display: inline-block;
+    padding-right: 15px;
+    position: relative;
+    margin-right: 15px;
+
+    &:after {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 1px;
+        height: 15px;
+        background: rgba(255, 255, 255, 0.3);
+        content: '';
+    }
+
+    i {
+        font-size: 15px;
+        color: $white-color;
+        cursor: pointer;
+    }
+}
+
+.header__right__social {
+    display: inline-block;
+    margin-right: 25px;
+
+    a {
+        display: inline-block;
+        font-size: 16px;
+        color: $white-color;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.header__right__btn {
+    display: inline-block;
+}
+
+.offcanvas-menu-wrapper {
+    display: none;
+}
+
+.canvas__open {
+    display: none;
+}

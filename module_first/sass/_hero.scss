@@ -1,0 +1,32 @@
+/*---------------------
+  Hero
+-----------------------*/
+.hero {
+    height: 850px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__text {
+
+    h5 {
+        color: $white-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 42px;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-style: italic;
+        color: $white-color;
+        margin-bottom: 30px;
+    }
+
+    .second-bg {
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,403 @@
+/*---------------------
+  About Video
+-----------------------*/
+.about-video {
+  position: relative;
+  z-index: 1;
+}
+
+.about__video__bg {
+  height: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .play-btn {
+    display: inline-block;
+    font-size: 14px;
+    color: $white-color;
+    height: 50px;
+    width: 50px;
+    background: $primary-color;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+
+.about__video__text {
+  border: 1px solid #e1e1e1;
+  padding: 70px 50px 70px 65px;
+  height: 390px;
+  background: $white-color;
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 26px;
+  }
+}
+
+/*---------------------
+  Application Form
+-----------------------*/
+.application-form {
+  background: #f5f5f5;
+  -webkit-clip-path: polygon(50% 0, 100% 21%, 100% 100%, 50% 100%, 0 100%, 0% 21%);
+  clip-path: polygon(50% 0, 100% 21%, 100% 100%, 50% 100%, 0 100%, 0% 21%);
+  padding-top: 290px;
+  margin-top: -190px;
+  padding-bottom: 70px;
+
+  &.courses--page {
+    margin-top: 0;
+    padding-top: 65px;
+    -webkit-clip-path: none;
+    clip-path: none;
+    background: transparent;
+    padding-bottom: 0;
+  }
+
+  &.pricing--page {
+    margin-top: 0;
+    padding-top: 0;
+    -webkit-clip-path: none;
+    clip-path: none;
+    background: transparent;
+    padding-bottom: 90px;
+
+    .application__form__content {
+      background: #f5f5f5;
+
+      .section-title {
+
+        span {
+          color: #0071e4;
+        }
+
+        h2 {
+          color: $heading-color;
+        }
+      }
+
+      form {
+
+        input {
+          color: #444444;
+          background: $white-color;
+          border: 1px solid #e1e1e1;
+
+          &::placeholder {
+            color: #444444;
+          }
+        }
+
+        .nice-select {
+          background: $white-color;
+          border: 1px solid #e1e1e1;
+
+          span {
+            color: #444444;
+          }
+    
+          &:after {
+            border-bottom: 1.5px solid rgba(17, 17, 17, 0.7);
+            border-right: 1.5px solid rgba(17, 17, 17, 0.7);
+          }
+        }
+      }
+    }
+  }
+
+  .application__form__content {
+    background: $secondary-color;
+    padding: 70px;
+
+    .section-title {
+
+      span {
+        color: $white-color;
+      }
+
+      h2 {
+        color: $white-color;
+      }
+    }
+
+    form {
+
+      input {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: transparent;
+        color: $white-color;
+
+        &::placeholder {
+          color: $white-color;
+        }
+      }
+
+      .nice-select {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: transparent;
+        
+        span {
+          color: $white-color;
+        }
+
+        &:after {
+          border-color: $white-color;
+        }
+      }
+    }
+  }
+
+  form {
+
+    input {
+      width: 100%;
+      height: 50px;
+      border: 1px solid #e1e1e1;
+      background: $white-color;
+      font-size: 14px;
+      color: #444444;
+      padding-left: 20px;
+      margin-bottom: 30px;
+
+      &::placeholder {
+        color: #444444;
+      }
+    }
+
+    .nice-select {
+      height: 50px;
+      line-height: 50px;
+      width: 100%;
+      float: none;
+      border-radius: 0;
+      border: 1px solid #e1e1e1;
+      font-size: 14px;
+      background: $white-color;
+      margin-bottom: 30px;
+
+      span {
+        color: #444444;
+      }
+
+      &:after {
+        border-bottom: 1.5px solid rgba(17, 17, 17, 0.7);
+        border-right: 1.5px solid rgba(17, 17, 17, 0.7);
+        height: 7px;
+        right: 22px;
+        width: 7px;
+      }
+
+      .list {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+/*---------------------
+  Pricing
+-----------------------*/
+.pricing {
+  padding-bottom: 70px;
+
+  &.pricing--page {
+
+    .section-title {
+
+      h2 {
+        color: $heading-color;
+      }
+    }
+
+    .pricing__item {
+      background: #f5f5f5;
+
+      &:hover {
+        background: $secondary-color;
+
+        .pricing__item__title {
+
+          span {
+            color: $white-color;
+          }
+
+          h5 {
+            color: $white-color;
+          }
+        }
+
+        ul {
+
+          li {
+            color: $white-color;
+          }
+        }
+      }
+
+      ul {
+
+        li {
+          color: #444444;
+        }
+      }
+    }
+
+    .pricing__item__title {
+
+      span {
+        color: #444444;
+      }
+
+      h5 {
+        color: $heading-color;
+      }
+    }
+  }
+
+  .section-title {
+
+    h2 {
+      color: $white-color;
+    }
+  }
+}
+
+.pricing__item {
+  background: rgba(12, 43, 75, 0.3);
+  text-align: center;
+  padding: 40px 35px 35px;
+  margin-bottom: 40px;
+  @include transition(all, .5s);
+
+  &:hover {
+    background: rgba(12, 43, 75, 1);
+
+    .pricing__item__title {
+      border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+    }
+
+    .primary-btn {
+      background: $primary-color;
+    }
+  }
+
+  .pricing__item__title {
+    border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+    padding-bottom: 45px;
+    margin-bottom: 25px;
+    @include transition(all, .3s);
+
+    span {
+      font-size: 14px;
+      color: $white-color;
+      font-weight: 700;
+      text-transform: uppercase;
+      @include transition(all, .3s);
+    }
+
+    h2 {
+      font-size: 50px;
+      color: $primary-color;
+      font-weight: 700;
+      margin-top: 4px;
+      margin-bottom: 18px;
+    }
+
+    h5 {
+      color: $white-color;
+      font-weight: 700;
+      text-transform: uppercase;
+      @include transition(all, .3s);
+    }
+  }
+
+  ul {
+    margin-bottom: 35px;
+
+    li {
+      list-style: none;
+      font-size: 14px;
+      color: $white-color;
+      line-height: 36px;
+      @include transition(all, .3s);
+    }
+  }
+
+  .primary-btn {
+    display: block;
+    @include transition(all, .3s);
+  }
+}
+
+/*---------------------
+  Team
+-----------------------*/
+.team {
+  padding-bottom: 70px;
+
+  &.team--instructor {
+    padding-top: 70px;
+  }
+}
+
+.team__all {
+  text-align: right;
+}
+
+.team__item {
+  border: 1px solid #e1e1e1;
+  overflow: hidden;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+.team__item__img {
+  float: left;
+  margin-right: 30px;
+}
+
+.team__item__text {
+  overflow: hidden;
+
+  h5 {
+    font-weight: 700;
+    color: $heading-color;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  span {
+    font-size: 14px;
+    color: $primary-color;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 14px;
+    color: $heading-color;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .team__item__social {
+
+    a {
+      font-size: 16px;
+      color: $heading-color;
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/*---------------------
+  Courses
+-----------------------*/
+.courses {
+    padding-bottom: 60px;
+}
+
+.courses__all {
+    text-align: right;
+}
+
+.course__item {
+    margin-bottom: 40px;
+
+    img {
+        margin-bottom: 25px;
+        min-width: 100%;
+    }
+
+    h5 {
+        color: $heading-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    h4 {
+        font-size: 22px;
+        font-weight: 700;
+        color: $primary-color;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #444444;
+        line-height: 24px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        display: inline-block;
+        font-size: 14px;
+        color: $heading-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        position: relative;
+        padding: 0 0 6px;
+        border-bottom: 2px solid $primary-color;
+    }
+}

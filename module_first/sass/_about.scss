@@ -1,0 +1,115 @@
+/*---------------------
+  About Hero
+-----------------------*/
+.about-hero {
+    padding-top: 170px;
+    padding-bottom: 130px;
+    margin-top: -48px;
+    height: 560px;
+}
+
+.about__hero__text {
+
+    .section-title {
+        margin-bottom: 24px;
+
+        h2 {
+            color: $white-color;
+        }
+    }
+
+    p {
+        color: $white-color;
+        margin-bottom: 30px;
+    }
+
+    .play-btn {
+        display: inline-block;
+        font-size: 14px;
+        color: $white-color;
+        height: 50px;
+        width: 50px;
+        background: $primary-color;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+    }
+}
+
+/*---------------------
+  Testimonial
+-----------------------*/
+.testimonial__content {
+    padding: 90px 70px 90px;
+
+    .section-title {
+        margin-bottom: 36px;
+
+        h2 {
+            color: $white-color;
+        }
+    }
+}
+
+.testimonial__slider {
+    max-width: 585px;
+    &.owl-carousel {
+
+        .owl-dots {
+            margin-top: 25px;
+
+            button {
+                height: 10px;
+                width: 10px;
+                display: inline-block;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.3);
+                margin-right: 10px;
+    
+                &.active {
+                    background: rgba(255, 255, 255, 1);
+                }
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.testimonial__item {
+
+    .quote-icon {
+
+        i {
+            font-size: 24px;
+            color: $secondary-color;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        color: $white-color;
+        line-height: 27px;
+        font-style: italic;
+        margin-bottom: 20px;
+        margin-top: 6px;
+    }
+
+    h6 {
+        color: $white-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+
+    .rating {
+
+        i {
+            font-size: 12px;
+            color: $primary-color;
+            margin-right: -4px;
+        }
+    }
+}

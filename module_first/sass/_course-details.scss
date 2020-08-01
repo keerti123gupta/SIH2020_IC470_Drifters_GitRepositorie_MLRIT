@@ -1,0 +1,206 @@
+/*---------------------
+  Room Details Slider
+-----------------------*/
+.course-details {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+.course__details__desc {
+
+    img {
+        margin-bottom: 40px;
+    }
+}
+
+.course__details__title {
+    margin-bottom: 18px;
+
+    h3 {
+        color: $heading-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .price {
+        font-size: 30px;
+        color: $primary-color;
+        font-weight: 700;
+    }
+}
+
+.course__details__rating {
+    text-align: right;
+    margin-bottom: 18px;
+
+    .rating {
+        margin-bottom: 5px;
+
+        i {
+            font-size: 12px;
+            color: $primary-color;
+            margin-right: -4px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    p {
+        font-size: 14px;
+        color: #444444;
+    }
+}
+
+.course__details__text {
+    color: #444444;
+    margin-bottom: 34px;
+}
+
+.course__details__feature {
+    margin-bottom: 30px;
+
+    h5 {
+        color: $heading-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    ul {
+
+        li {
+            list-style: none;
+            font-size: 15px;
+            color: #444444;
+            position: relative;
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            span {
+                line-height: 24px;
+                display: block;
+                overflow: hidden;
+            }
+
+            i {
+                font-size: 15px;
+                color: $primary-color;
+                margin-right: 15px;
+                float: left;
+                position: relative;
+                top: 4px;
+            }
+        }
+    }
+}
+
+.course__details__sidebar__location {
+    border: 1px solid #e1e1e1;
+    margin-bottom: 60px;
+}
+
+.course__details__location__map {
+    height: 300px;
+
+    iframe {
+        width: 100%;
+    }
+}
+
+.course__details__location__address {
+    border-top: 1px solid #e1e1e1;
+    padding: 25px 30px 20px;
+
+    h5 {
+        color: $heading-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 14px;
+        color: $heading-color;
+        line-height: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.course__details__sidebar__register {
+
+    h5 {
+        color: $white-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: $secondary-color;
+        padding: 25px 30px 22px;
+    }
+
+    form {
+        background: #f5f5f5;
+        padding: 30px;
+
+        input {
+            width: 100%;
+            height: 50px;
+            border: 1px solid #e1e1e1;
+            background: $white-color;
+            font-size: 14px;
+            color: $heading-color;
+            padding-left: 20px;
+            margin-bottom: 20px;
+
+            &::placeholder {
+                color: $heading-color;
+            }
+        }
+
+        .nice-select {
+            height: 50px;
+            line-height: 50px;
+            width: 100%;
+            float: none;
+            border-radius: 0;
+            border: 1px solid #e1e1e1;
+            font-size: 14px;
+            background: $white-color;
+            margin-bottom: 20px;
+
+            span {
+                color: $heading-color;
+            }
+
+            &:after {
+                border-bottom: 1.5px solid $heading-color;
+                border-right: 1.5px solid $heading-color;
+                height: 7px;
+                right: 22px;
+                width: 7px;
+            }
+
+            .list {
+                width: 100%;
+                border-radius: 0;
+                margin-top: 0;
+            }
+        }
+
+        button {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
